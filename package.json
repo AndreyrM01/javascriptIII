@@ -1,0 +1,22 @@
+{
+  "name": "javascriptiii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass -o public/css",
+    "sass-build": "node-sass sass -o public/css --output-style compressed",
+    "dev-server": "live-server --watch=\"index.html,sass,js\"",
+    "eslint": "eslint js",
+    "dev": "npm run sass-build && concurrently \"npm run sass\" \"npm run dev-server\" \"esw -w js\""
+  },
+  "author": "Jostin",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.0.1",
+    "live-server": "^1.2.2",
+    "livereload": "^0.9.3",
+    "node-sass": "^8.0.0",
+    "sass": "^1.62.1"
+  }
+}
