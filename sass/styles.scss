@@ -1,0 +1,13 @@
+@import'components/dadImage';
+@import'components/randomJoke';
+@import'components/lookForJoke';
+@import'components/cardLookForJoke';
+@import'components/cardRandomJoke';
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-content: center;
+}

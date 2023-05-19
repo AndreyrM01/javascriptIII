@@ -1,0 +1,35 @@
+.searchedJoke{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.input-form{
+  width: 255px;
+  height: 35px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.search-btn{
+  width: 100px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.results-container{
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+}
+
+.researchJoke{
+  width: 91%;
+  height: 200px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}

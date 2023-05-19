@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "sass": "node-sass -w sass -o public/css",
     "sass-build": "node-sass sass -o public/css --output-style compressed",
