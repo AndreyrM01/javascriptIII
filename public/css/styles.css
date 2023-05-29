@@ -52,14 +52,12 @@
 
 .researchJoke {
   width: 91%;
-  height: 200px;
   background-color: #ffffff;
   margin-bottom: 20px;
   border-radius: 5px; }
 
 .searchBox-container {
-  width: 100%;
-  height: 320px;
+  width: auto;
   background-color: #c2c2c2;
   border-radius: 5px; }
 
@@ -76,3 +74,11 @@ body {
   padding: 0;
   display: grid;
   place-content: center; }
+
+li {
+  list-style: none;
+  padding: 3px; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
