@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../public/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
   <title>Document</title>
+  <link rel="stylesheet" href="/public/css/styles.css">
 </head>
-<body>
-  
+
+<body class="container__tarea2">
+  <main class="main">
+    <section class="product-wrap">
+      <div class="visualizer">
+        <img id="main-img" class="visualizer__img" src="/images/product-shirt-white.jpg" />
+        <p id="main-joke" class="visualizer__joke"></p>
+      </div>
+      <div class="btn__container">
+        <div>
+          <input id="black" class="color" type="radio" name="color">
+          <label for="black">Black</label>
+        </div>
+        <div>
+          <input id="white" class="color" type="radio" name="color">
+          <label for="white">White</label>
+        </div>
+      </div>
+    </section>
+    <section class="product-details">
+      <h1 id="title">White shirt with joke</h1>
+      <p id="price">$20</p>
+      <p id="selected-joke" class="p_container"></p>
+
+      <div class="dad_card-fix">
+        <h1 class="randomJoke-h1">Choose another joke!</h1>
+        <div class="randomJoke search-position__fix">
+          <p id="randomJokep"></p>
+        </div>
+        <button class="randomJoke-btn_2" id="randomJoke">Get another joke!</button>
+      </div>
+
+    <h2 class="h2_dynamic">Choose another products:</h2>
+    <div id="image-container"></div>
+    </section>
+
+  </main>
+  <script type="module" src="../main2.js"></script>
 </body>
 </html>
