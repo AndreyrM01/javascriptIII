@@ -1,7 +1,10 @@
 import { getJokeByTerm } from "../services/apiUrls.js";
+import { Publisher } from "../publisher/Publisher.js";
 
 const searchBtn = document.querySelector('.search-btn');
 const resultJokes = document.getElementById('resultJokes');
+
+const publisher = new Publisher('jokesSearch');
 
 async function renderJokesByTerm(event) {
   event.preventDefault();
@@ -22,12 +25,24 @@ async function renderJokesByTerm(event) {
       text: result.joke,
     }));
 
-    resultJokes.innerHTML = jokes.map(joke => `<li><a href="product.html?id=${joke.id}" id="${joke.id}">${joke.text}</a></li>`).join('');
+    resultJokes.innerHTML = jokes
+      .map(
+        (joke) =>
+          `<li><a href="product.html?id=${joke.id}" id="${joke.id}">${joke.text}</a></li>`
+      )
+      .join('');
+
+    publisher.publish(jokes);
   }
 }
 
 const initSearch = () => {
+  publisher.subscribe((jokes) => {
+    console.log('Received jokes:', jokes);
+    // Aquí puedes realizar acciones adicionales con los chistes recibidos
+  });
+
   searchBtn.addEventListener('click', renderJokesByTerm);
-}
+};
 
 export { initSearch };

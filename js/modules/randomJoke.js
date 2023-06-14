@@ -33,3 +33,4 @@ const initRandomJokeComponent = () => {
 
 export { jokeChange, initRandomJokeComponent };
 export {getJoke};
+
